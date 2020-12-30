@@ -1,0 +1,21 @@
+body{
+    background-color: powderblue;
+}
+#para{
+    color: red;
+    text-align: center;
+}
+
+.para1{
+    color: blue;
+    text-align: center;
+}
+p.center{
+    color: purple;
+    text-align: left;
+    font-size: 200%;
+}
+p.large{
+    color: saddlebrown;
+    text-align: left;
+}
