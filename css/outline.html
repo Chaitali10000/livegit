@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.thin {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: red;
+  outline-width: thin;
+}
+
+p.medium {
+  border: 1px solid black;
+  outline-style: dotted;
+  outline-color: blue;
+  outline-width: medium;
+}
+
+p.thick {
+  border: 1px solid black;
+  outline-style: double;
+  outline-color:yellow;
+  outline-width: thick;
+}
+
+p.four {
+  border: 1px solid black;
+  outline-style: ridge;
+  outline-color: violet;
+  outline-width: 4px;
+}
+
+.ex1 {
+  border: 1px solid black;
+  outline-style: dashed;
+  outline-color: rgb(255, 0, 0);
+  outline-width: thin;
+}
+
+ .ex2 {
+  border: 1px solid black;
+  outline-style: groove;
+  outline-color:rgb(0, 0, 255);
+  outline-width: medium;
+}
+
+.ex3 {
+  border: 1px solid black;
+  outline-style: inset;
+  outline-color: rgb(188, 188, 188);
+  outline-width: thick;
+}
+
+.ex4 {
+  border: 1px solid black;
+  outline-style: outset;
+  outline-color: rgb(150, 14, 150);
+  outline-width: 4px;
+}
+
+.para{
+    margin: 4px;
+    border: 1px solid black;
+    outline: 2px solid red;
+    outline-offset: 15px;
+}
+
+
+</style>
+</head>
+<body>
+
+<h2>The outline-width Property</h2>
+
+<p class="thin">A thin outline.</p>
+<p class="medium">A medium outline.</p>
+<p class="thick">A thick outline.</p>
+<p class="four">A 4px thick outline.</p>
+
+<br><br>
+
+<h2>The outline-RGB color Property</h2>
+
+<p class="ex1">A thin outline.</p>
+<p class="ex2">A medium outline.</p>
+<p class="ex3">A thick outline.</p>
+<p class="ex4">A 4px thick outline.</p>
+
+<br>
+<h2>The outline-offset Property</h2>
+
+<p class="para">This paragraph has an outline 15px outside the border edge.</p>
+
+
+</body>
+</html>
