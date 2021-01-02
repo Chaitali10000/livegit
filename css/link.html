@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<htm>
+    <head>
+     <style>
+         a{
+             color: cornflowerblue;
+         }
+
+         .link:link{
+           color: red;
+           text-decoration: none;
+           background-color: greenyellow;
+         }
+         .link:visited{
+             color:green;
+             text-decoration: none;
+             background-color: violet;
+         }
+         .link:hover{
+             color: pink;
+             text-decoration: underline;
+             background-color: cyan;
+         }
+         .link:active{
+             color: blue;
+             text-decoration: underline;
+             background-color: darkkhaki;
+         }
+
+         .button:link, .button:visited{
+             background-color: darkred;
+             color: white;
+             padding: 12px 15px;
+             text-align: center;
+             text-decoration: none;
+             display: inline-block;
+         }
+         .button:hover, .button:active{
+             background-color: blue;
+         }
+
+         .button-link:link, .button-link:visited{
+             background-color: white;
+             border: 2px solid red;
+             color: black;
+             padding: 14px 15px;
+             text-decoration: none;
+             text-align: center;
+             display: inline-block;
+             font-size: 20px;
+         }
+         .button-link:hover, .button-link:active{
+             background-color: red;
+             color: black;
+         }
+     </style>
+    </head>
+    <body>
+        <h1>CSS links</h1>
+        <p><a href="https://www.w3schools.com/css/css_link.asp">This is a link</a></p>
+
+        <br><br>
+        <h2>CSS links</h2>
+        <p><a href="https://www.w3schools.com/css/css_link.asp" target="_blank" class="link">This is a link</a></p>
+
+        <br><br>
+        <h1>Button link</h1>
+        <p><a href="https://www.w3schools.com/css/css_link.asp" target="_blank" class="button">This is a link</a></p>
+    
+        <br><br>
+        <p><a href="https://www.w3schools.com/css/css_link.asp" target="_blank" class="button-link">This is a link</a></p>
+    
+    </body>
+</htm>

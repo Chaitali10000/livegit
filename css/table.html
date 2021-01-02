@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+         .first, th, td {
+              border: 1px solid black;
+              
+            }
+            .width, th, td {
+              border: 1px solid black;
+              
+            }
+            .width{
+                width: 100%;
+            }
+            .collapse, th, td{
+                border: 1px solid black;
+            }
+            .collapse{
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            .height, th, td{
+                border: 1px solid black;
+            }
+            .height{
+                width: 70%;
+                border-collapse: collapse;
+            }
+            .height th{
+                height: 30px;
+            }
+            .height td{
+                text-align: center;
+                vertical-align: bottom;
+                height: 40px;
+            }
+
+            .padding, th, td{
+                border: 1px solid black;
+                text-align: left;
+                padding: 15px;
+            }
+            .padding{
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            .hover{
+                border-collapse: collapse;
+                width: 100%;
+               
+            }
+
+            .hover, th, td{
+                padding: 8px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+           .hover tr:hover {
+               background-color:#f5f5f5;
+               }
+            
+
+               .striped {
+                border-collapse: collapse;
+                width: 100%;
+                }
+
+               .striped th, td {
+                text-align: left;
+                padding: 8px;
+                }
+
+               .striped tr:nth-child(even) {background-color: #f2f2f2;}
+            </style>
+    </head>
+    <body>
+        <h2>Add a border to a table</h2>
+
+        <table class="first">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        <tr>
+            <td>Chaitali</td>
+            <td>Rewatkar</td>
+        </tr>
+        <tr>
+            <td>Puja</td>
+            <td>Ghatode</td>
+        </tr>
+        </table>
+
+        <br><br>
+        <h2>Table with full width</h2>
+
+        <table class="width">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        <tr>
+            <td>Chaitali</td>
+            <td>Rewatkar</td>
+        </tr>
+        <tr>
+            <td>Puja</td>
+            <td>Ghatode</td>
+        </tr>
+        </table>
+
+        <br><br>
+        <table class="collapse">
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+            </tr>
+            <tr>
+                <td>Chaitali</td>
+                <td>Rewatkar</td>
+            </tr>
+            <tr>
+                <td>Puja</td>
+                <td>Ghatode</td>
+            </tr>
+            </table>
+        <br><br>
+
+        <table class="height">
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Chaitali</td>
+                <td>Rewatkar</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Puja</td>
+                <td>Ghatode</td>
+                <td>26</td>
+            </tr>
+            </table>
+
+            <br><br>
+            <table class="padding">
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Class</th>
+                </tr>
+                <tr>
+                    <td>Chaitali</td>
+                    <td>Rewatkar</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Puja</td>
+                    <td>Ghatode</td>
+                    <td>2</td>
+                </tr>
+                </table>
+
+                <br><br><br>
+                <table class="hover">
+                    <tr>
+                      <th>Firstname</th>
+                      <th>Lastname</th>
+                    <th>class</th>
+                    </tr>
+                    <tr>
+                      <td>Peter</td>
+                      <td>Griffin</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>Lois</td>
+                      <td>Griffin</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>Joe</td>
+                      <td>Swanson</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Cleveland</td>
+                      <td>Brown</td>
+                      <td>4</td>
+                    </tr>
+                  </table>
+                  <br><br>
+
+                  
+                  <h2>Striped Table</h2>
+                    <table class="striped">
+                    <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Points</th>
+                    </tr>
+                    <tr>
+                    <td>Peter</td>
+                    <td>Griffin</td>
+                    <td>100</td>
+                    </tr>
+                    <tr>
+                    <td>Lois</td>
+                    <td>Griffin</td>
+                    <td>150</td>
+                    </tr>
+                    <tr>
+                    <td>Joe</td>
+                    <td>Swanson</td>
+                    <td>300</td>
+                    </tr>
+                    <tr>
+                    <td>Cleveland</td>
+                    <td>Brown</td>
+                    <td>250</td>
+                    </tr>
+                    </table>
+
+
+    </body>
+</html>

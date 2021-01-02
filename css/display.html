@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+          li{
+              display: inline;
+          }
+
+          span{
+              display: block;
+          }
+
+          .link{
+              display: block;
+          }
+
+          .hidden{
+              display: none;
+          }
+
+          .visiblity{
+              visibility: hidden;
+          }
+      </style>
+    </head>
+    <body>
+        <p>Display a links</p>
+        <li><a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML</a></li>
+        <li><a href="https://www.w3schools.com/css/css_display_visibility.asp" target="_blank">CSS</a></li>
+        <li><a href="https://www.w3schools.com/js/default.asp" target="_blank">JAVASCRIPT</a></li>
+
+        <br><br>
+        <span>A display property with a value of "block" results in</span> <span>a line break between the two elements.</span>
+    
+    <br><br>
+    <p>Display a links</p>
+    <li><a href="https://www.w3schools.com/html/default.asp" target="_blank" class="link">HTML</a></li>
+    <li><a href="https://www.w3schools.com/css/css_display_visibility.asp" target="_blank" class="link">CSS</a></li>
+    <li><a href="https://www.w3schools.com/js/default.asp" target="_blank" class="link">JAVASCRIPT</a></li>
+
+    <br><br>
+
+    <h1>This is a visible</h1>
+    <h1 class="hidden">This is a hidden.</h1>
+    <p>Notice that the h1 element with display: none; does not take up any space.</p> 
+
+    <br><br>
+
+    <h1>This is a visible</h1>
+    <h2 class="visiblity">This is a hidden.</h2>
+    <p>Notice that the h1 element with display: none; does not take up any space.</p>
+    </body>
+</html>
