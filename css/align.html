@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <style>
+         .center{
+             margin: auto;
+             width: 30%;
+             padding: 10px;
+             border: 1px solid red;
+         }
+
+         .center1{
+             text-align: center;
+             border: 2px solid green;
+         }
+
+         img{
+             margin-left: auto;
+             margin-right: auto;
+             display: block;
+         }
+
+         .right{
+             position: absolute;
+             right: 0;
+             border: 2px solid green;
+             padding: 10px;
+             width: 200px;
+         }
+         .left{
+             float: left;
+             border: 2px solid green;
+             padding: 10px;
+             width: 200px;
+         }
+
+         div {
+            border: 3px solid #4CAF50;
+            padding: 5px;
+            }
+
+            .img1 {
+            float: right;
+            }
+
+            .clearfix {
+            overflow: auto;
+            }
+
+            .img2 {
+            float: right;
+            }
+
+            .center2{
+                padding: 70px 0;
+                border:2px solid green;
+            }
+
+            .center3{
+                line-height: 200px;
+                border: 2px solid green;
+                text-align: center;
+                height: 200px;
+            }
+
+            .center3 p{
+                line-height: 2px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            .center4{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 200px;
+                border: 2px solid green;
+            }
+     </style>
+    </head>
+    <body>
+        <h2>Align property</h2>
+        <div class="center">
+            <p>Hello World!</p>
+        </div>
+
+        <br><br>
+
+        <h2>Text align center</h2>
+        <div class="center1">
+            <p>Hello World</p>
+        </div>
+        <br><br>
+
+        <h2>Center image</h2>
+        <img src="images/flower.jpg" alt="flower" style="width: 20%;">
+        <br><br>
+
+        <h2>Right align</h2>
+        <div class="right">
+            <p>This paragraph is right align. We have to use position absolute.</p>
+        </div>
+        <br><br>
+
+        <h2>Right align</h2>
+        <div class="left">
+            <p>This paragraph is right align. We have to use position absolute.</p>
+        </div>
+        <br><br><br><br><br>
+        <br><br>
+
+        <h2>Clearfix</h2>
+
+        <p>In this example, the image is taller than the element containing it, and it is floated, so it overflows outside of its container:</p>
+        
+        
+        <div>
+        <img class="img1" src="images/flower.jpg" alt="flower" width="170" height="170">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...
+        </div>
+
+        <p style="clear:right">Add a clearfix class with overflow: auto; to the containing element, to fix this problem:</p>
+
+        <div class="clearfix">
+        <img class="img2" src="images/flower.jpg" alt="flower" width="170" height="170">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...
+        </div>
+         <br><br><br>
+
+         <h2>Vertically center</h2>
+         <div class="center2">
+             <p>I am vertically cenetered</p>
+         </div>
+         <br><br><br>
+
+         <h2>Line height</h2>
+         <div class="center3">
+             <p>I am vertically centerd</p>
+         </div>
+         <br><br>
+          
+         <h2>flexbox center</h2>
+         <div class="center4">
+            <p>I am vertically and horizontally centered.</p>
+          </div>
+    </body>
+</html>

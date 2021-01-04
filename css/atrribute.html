@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a.link1[target] {
+  background-color: yellow;
+}
+a.link[target="_top"] {
+  background-color: yellow;
+}
+
+[class|=top] {
+    background-color: yellow;
+}
+
+input[type=text] {
+  width: 150px;
+  display: block;
+  margin-bottom: 10px;
+  background-color: yellow;
+}
+
+input[type=button] {
+  width: 120px;
+  margin-left: 35px;
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<h2>CSS [attribute] Selector</h2>
+<p>The links with a target attribute gets a yellow background:</p>
+
+<a class="link1" href="https://www.w3schools.com/css/css_attribute_selectors.asp">w3schools.com</a>
+<a class="link1" href="https://www.w3schools.com/css/css_attribute_selectors.asp" target="_blank">disney.com</a>
+<a class="link1" href="https://www.w3schools.com/css/css_attribute_selectors.asp" target="_top">wikipedia.org</a>
+<br><br>
+
+<h2>Css attribute value selector</h2>
+<a class="link" href="https://www.w3schools.com/css/css_attribute_selectors.asp">w3schools.com</a>
+<a class="link" href="https://www.w3schools.com/css/css_attribute_selectors.asp" target="_blank">disney.com</a>
+<a class="link" href="https://www.w3schools.com/css/css_attribute_selectors.asp" target="_top">wikipedia.org</a>
+<br><br>
+
+<h2>CSS attribute value Selector</h2>
+
+<h1 class="top-header">Welcome</h1>
+<p class="top-text">Hello world!</p>
+<p class="topcontent">Are you learning CSS?</p>
+
+<br><br>
+
+<h2>Styling Forms</h2>
+
+<form name="input" action="" method="get">
+  Firstname:<input type="text" name="Name" value="Chaitali" size="20">
+  Lastname:<input type="text" name="Name" value="Rewatkar" size="20">
+  <input type="button" value="Example Button">
+</form>
+</body>
+</html>

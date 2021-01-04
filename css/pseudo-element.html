@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.para::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+
+p.para::first-letter{
+    color: green;
+    font-size: 40px;
+}
+
+p.intro::first-letter{
+    color: greenyellow;
+    font-size: 50px;
+}
+
+p.paragraph::first-letter{
+    color: purple;
+    font-size: 50px;
+}
+
+p.paragraph::first-line{
+    color: salmon;
+    font-variant: small-caps;
+}
+
+h1::before {
+  content: counter(one);
+}
+</style>
+</head>
+<body>
+
+<p class="para">You can use the ::first-line pseudo-element to add a
+     special effect to the first line of a text. Some more text. And even more, and more, 
+     and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+   <br><br>
+
+   <p class="intro">This is an introduction.</p>
+<p>This is a another paragaraph.</p>
+<br><br>
+
+<p class="paragraph">You can use the ::first-line pseudo-element to add a
+    special effect to the first line of a text. Some more text. And even more, and more, 
+    and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+
+    <br><br>
+
+    <h1>This is a heading</h1>
+<p>The ::before pseudo-element inserts content before the content of an element.</p>
+
+<h1>This is a heading</h1>
+</body>
+</html>
