@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+          .text1{
+              border: 1px solid black;
+              width: 200px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: clip;
+          }
+
+          .text2{
+              border: 1px solid black;
+              width: 200px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+          }
+
+          .text{
+              width: 200px;
+              border: 1px solid black;
+              overflow: hidden;
+              white-space: nowrap;
+          }
+
+          .text:hover{
+              overflow: visible;
+          }
+
+          .test{
+              width: 200px;
+              border: 1px solid black;
+              word-wrap: break-word;
+          }
+
+          .test1{
+              width: 200px;
+              border: 1px solid black;
+              word-break: keep-all;
+          }
+
+          .test2{
+              width: 300px;
+              border: 1px solid black;
+              word-break: break-all;
+          }
+
+          .test3{
+              writing-mode: horizontal-tb;
+          }
+
+          span.test4{
+              writing-mode: vertical-lr;
+          }
+
+          p.test4{
+              writing-mode: vertical-lr;
+          }
+      </style>
+    </head>
+    <body>
+        <h1>Text overflow property</h1>
+
+        <h2>text overflow clip property</h2>
+        <p class="text1">This is some long text that will not fit in the box</p>
+
+        <h2>text overflow ellipsis property</h2>
+        <p class="text2">This is some long text that will not fit in the box</p>
+        <br><br>
+
+        <h2>text overflow ellipsis property</h2>
+        <p class="text" style="text-overflow: ellipsis;">This is some long text that will not fit in the box</p>
+
+        <h2>text overflow clip property</h2>
+        <p class="text" style="text-overflow: clip;">This is some long text that will not fit in the box</p>
+         
+        <br><br>
+
+        <h1>The word-wrap Property</h1>
+
+        <p class="test"> This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. 
+         The long word will break and wrap to the next line.</p><br><br>
+
+         <p class="test1"> This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. 
+            The long word will break and wrap to the next line.</p><br>
+
+            <p class="test2"> This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. 
+                The long word will break and wrap to the next line.</p><br><br>
+        
+                <p class="test3"> This paragraph contains a very long word.</p><br>
+
+                <p> This paragraph contains a very long word break <span class="test4">vertical</span> line</p><br>
+                <p class="test4"> This paragraph contains a very long word break vertical</p>
+
+    </body>
+</html>

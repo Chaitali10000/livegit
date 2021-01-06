@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <style>
+           .corner1{
+
+               border-radius: 10px;
+               padding: 20px;
+               width: 200px;
+               height: 150px;
+               background-color: cadetblue;
+                 }
+                .corner2 {
+                border-radius: 25px;
+                border: 2px solid #73AD21;
+                padding: 20px; 
+                width: 200px;
+                height: 150px;  
+                }
+
+                .corner3{
+                border-radius: 25px;
+                background: url(images/paper.jpg);
+                background-position: left top;
+                background-repeat: repeat;
+                padding: 20px; 
+                width: 200px;
+                height: 150px;  
+                
+                }
+
+                #corners1 {
+                border-radius: 15px 50px 30px 5px;
+                background: #73AD21;
+                padding: 20px; 
+                width: 200px;
+                height: 150px; 
+                }
+
+                #corners2 {
+                border-radius: 15px 50px 30px;
+                background: #73AD21;
+                padding: 20px; 
+                width: 200px;
+                height: 150px; 
+                }
+
+                #corners3 {
+                border-radius: 15px 50px;
+                background: #73AD21;
+                padding: 20px; 
+                width: 200px;
+                height: 150px; 
+                } 
+
+                #corners4 {
+                border-radius: 15px;
+                background: #73AD21;
+                padding: 20px; 
+                width: 200px;
+                height: 150px; 
+                } 
+
+       </style>
+    </head>
+    <body>
+        <h1>Border radius property</h1>
+
+        <p>Rounded corner with background color</p>
+        <p class="corner1">Rounded corners</p>
+        <p>Rounded corner with corner</p>
+        <p class="corner2">Rounded corners</p>
+        <p>Rounded corner with background image</p>
+        <p class="corner3">Rounded corners</p>
+        <br><br>
+
+        <h1>The border-radius Property</h1>
+
+        <p>Four values - border-radius: 15px 50px 30px 5px:</p>
+        <p id="corners1"></p>
+
+        <p>Three values - border-radius: 15px 50px 30px:</p>
+        <p id="corners2"></p>
+
+        <p>Two values - border-radius: 15px 50px:</p>
+        <p id="corners3"></p>
+
+        <p>One value - border-radius: 15px:</p>
+        <p id="corners4"></p>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#borderimg { 
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(images/border.jpg) 30 round;
+}
+
+.borderimag{
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(images/border.jpg) 30 stretch;
+}
+
+#borderimg1 {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(images/border.jpg) 50 round;
+}
+
+#borderimg2 {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(images/border.jpg) 20% round;
+}
+
+#borderimg3 {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(images/border.jpg) 30% round;
+}
+</style>
+</head>
+<body>
+
+<h1>The border-image Property</h1>
+
+<p>Here, the middle sections of the image are repeated to create the border:</p>
+<p id="borderimg">border-image: url(border.jpg)</p>
+
+<p>Here is the original image:</p><img src="images/border.jpg" height="50px" width="50px"></p>
+<br>
+<br>
+
+<h1>Streching property</h1>
+<p class="borderimag">border image strching property 30 stretch.</p>
+<br><br>
+
+<p id="borderimg1">border-image: url(images/border.jpg) 50 round;</p>
+<p id="borderimg2">border-image: url(images/border.jpg) 20% round;</p>
+<p id="borderimg3">border-image: url(images/border.jpg) 30% round;</p>
+
+
+
+</body>
+</html>

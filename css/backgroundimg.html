@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+       .div{
+           background-image: url(images/tree.jpg), url(images/paper.jpg);
+           background-position: right bottom, left top;
+            background-repeat: no-repeat, repeat;
+            padding: 15px;
+            background-size: 200px 80px;
+                     }
+
+        .div1{
+            border: 1px solid yellow;
+            height: 150px;
+            width: 100px;
+            background-image: url(images/flower.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .div2{
+            border: 1px solid yellow;
+            height: 150px;
+            width: 100px;
+            background-image: url(images/flower.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .div3{
+            border: 1px solid yellow;
+            height: 150px;
+            width: 100px;
+            background-image: url(images/flower.jpg);
+            background-repeat: no-repeat;
+        
+        }
+     </style>
+    </head>
+    <body>
+        <h1>Multiple Background image property</h1>
+        <div class="div">
+            <h1>Lorem Ipsum Dolor</h1>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea 
+                commodo consequat.</p>
+        </div>
+        <br><br>
+
+        <h1>The background-size Property</h1>
+
+        <h2>background-size: contain:</h2>
+        <div class="div1">
+        <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <h2>background-size: cover:</h2>
+        <div class="div2">
+        <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <h2>No background-size defined:</h2>
+        <div class="div3">
+        <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+    </body>
+</html>
