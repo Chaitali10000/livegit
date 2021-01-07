@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: 3s;
+  
+}
+
+.pagination a.active{
+    background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+
+}
+
+.pagination a:hover:not(.active){
+    background-color: grey;
+    border-radius: 5px;
+}
+
+.pagination1 {
+  display: inline-block;
+}
+
+.pagination1 a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: 3s;
+  border: 1px solid grey;
+}
+
+.pagination1 a.active{
+    background-color: #4CAF50;
+  color: white;
+  border: 1px solid grey;
+}
+
+.pagination1 a:hover:not(.active){
+    background-color: grey;
+    
+}
+
+.pagination1 a:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.pagination1 a:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.center{
+    text-align: center;
+}
+.pagination2 {
+  display: inline-block;
+}
+
+.pagination2 a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: 3s;
+  border: 1px solid grey;
+  margin: 1px 2px;
+}
+
+.pagination2 a.active{
+    background-color: #4CAF50;
+  color: white;
+  border: 1px solid grey;
+}
+
+.pagination2 a:hover:not(.active){
+    background-color: grey;
+    
+}
+ul.breadcrumb {
+  padding: 8px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+
+ul.breadcrumb li {display: inline;}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {color: green;}
+
+</style>
+</head>
+<body>
+
+<h2>Simple Pagination</h2>
+
+<div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#" class="active">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+</div><br><br>
+
+<div class="pagination1">
+  <a href="#">&laquo;</a>
+  <a href="#" class="active">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+</div>
+<br><br>
+
+<div class="center">
+<div class="pagination2">
+    <a href="#">&laquo;</a>
+    <a href="#" class="active">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">6</a>
+    <a href="#">&raquo;</a>
+  </div>
+</div>
+<br>
+<br>
+
+<h2>Breadcrumb Pagination</h2>
+<ul class="breadcrumb">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Contact</a></li>
+  <li><a href="#">About</a></li>
+  <li>Italy</li>
+</ul>
+
+
+
+</body>
+</html>

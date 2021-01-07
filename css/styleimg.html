@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.image {
+  border-radius: 10px;
+}
+
+.image1{
+    border-radius: 50%;
+}
+
+.image2{
+    border: 1px solid red;
+    border-radius: 4px;
+    padding: 6px;
+    width: 150px;
+}
+
+.image3{
+    border: 1px solid red;
+    border-radius: 4px;
+    padding: 6px;
+    width: 150px;
+}
+
+.image3:hover{
+    box-shadow: 0 0 2px 1px green;
+}
+
+.image4{
+    max-width: 100%;
+    height: auto;
+}
+
+.image5{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.polaroid {
+  width: 40%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.image6 {
+  width: 50%;
+  height: 300;
+  float: left; 
+  max-width: 300px;
+}
+
+.blur {filter: blur(4px);}
+.brightness {filter: brightness(250%);}
+.contrast {filter: contrast(180%);}
+.grayscale {filter: grayscale(100%);}
+.huerotate {filter: hue-rotate(180deg);}
+.invert {filter: invert(100%);}
+.opacity {filter: opacity(50%);}
+.saturate {filter: saturate(7);}
+.sepia {filter: sepia(100%);}
+.shadow {filter: drop-shadow(8px 8px 10px green);}
+
+</style>
+</head>
+<body>
+
+<h2>Rounded Images</h2>
+<p>Use the border-radius property to create rounded images:</p>
+
+<img src="images/flower.jpg" alt="flowes" width="400" height="300" class="image">
+
+<img src="images/flower.jpg" alt="flowes" width="300" height="300" class="image1">
+<br><br>
+
+<img src="images/flower.jpg" alt="flower" width="100px" class="image2">
+
+<a target="_blank" href="images/flower.jpg">
+<img src="images/flower.jpg" alt="flowes" width="300" class="image3">
+</a><br><br>
+
+<h2>Responsive images</h2>
+<img src="images/tree.jpg" alt="tree" width="1000" height="300" class="image4">
+<br><br>
+
+<h2>Center an image</h2>
+<img src="images/tree.jpg" alt="tree" width="20%" class="image5"><br><br>
+
+<div class="polaroid">
+    <img src="images/flower.jpg" alt="flower" style="width:100%">
+    <div class="container">
+    <p>Flower</p>
+    </div>
+  </div>
+  
+  <div class="polaroid">
+    <img src="images/tree.jpg" alt="tree" style="width:100%">
+    <div class="container">
+    <p>Tree</p>
+    </div>
+  </div><br><br>
+
+  <img src="images/forest.jpg" alt="forest" width="300" height="300" class="image6">
+  <img src="images/forest.jpg" alt="forest" width="300" height="300" class="blur">
+  <img src="images/forest.jpg" alt="forest" width="300" height="300" class="brightness">
+  <img src="images/forest.jpg" alt="forest" width="300" height="300" class="contrast">
+  <img src="images/forest.jpg" alt="forest" width="300" height="300" class="grayscale">
+  <img src="images/forest.jpg" alt="forest" width="300" height="300" class="huerotate">
+  <img src="images/forest.jpg" alt="forest" width="300" height="300" class="invert">
+  <img src="images/forest.jpg" alt="forest" width="300" height="300" class="opacity">
+  <img src="images/forest.jpg" alt="forest" width="300" height="300" class="saturate">
+  <img src="images/forest.jpg" alt="forest" width="300" height="300" class="sepia">
+  <img src="images/forest.jpg" alt="forest" width="300" height="300" class="shadow">
+
+
+</body>
+</html>

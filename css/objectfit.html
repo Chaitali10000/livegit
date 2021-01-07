@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.image {
+  width:200px;
+  height:400px;
+}
+
+.image1{
+    width: 200px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.fill {object-fit: fill;}
+.contain {object-fit: contain;}
+.cover {object-fit: cover;}
+.scale-down {object-fit: scale-down;}
+.none {object-fit: none;}
+</style>
+</head>
+<body>
+
+<h2>Image</h2>
+<img src="images/forest.jpg" alt="Forest" width="400" height="300" class="image"><br><br>
+
+<h2>The object fit property</h2>
+<img src="images/forest.jpg" alt="forest" class="image1"><br><br>
+
+<h2>No object-fit:</h2>
+<img src="images/forest.jpg" alt="forest" style="width:200px;height:400px">
+
+<h2>object-fit: fill (this is default):</h2>
+<img class="fill" src="images/forest.jpg" alt="forest" style="width:200px;height:400px">
+
+<h2>object-fit: contain:</h2>
+<img class="contain" src="images/forest.jpg" alt="forest" style="width:200px;height:400px">
+
+<h2>object-fit: cover:</h2>
+<img class="cover" src="images/forest.jpg" alt="forest" style="width:200px;height:400px">
+
+<h2>object-fit: scale-down:</h2>
+<img class="scale-down" src="images/forest.jpg" alt="forest" style="width:200px;height:400px">
+
+<h2>object-fit: none:</h2>
+<img class="none" src="images/forest.jpg" alt="forest" style="width:200px;height:400px">
+
+
+</body>
+</html>
