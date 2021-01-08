@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <style>
+          body{
+              background-color: lightblue;
+          }
+
+          @media screen and (max-width: 480px){
+              body{
+                  background-color: indianred;
+              }
+          }
+
+          .div1{
+             overflow: auto;
+          }
+
+          .main{
+              margin-left: 5px;
+          }
+
+          .div2{
+              float: none;
+              width: auto;
+          }
+
+          .ulist{
+              margin: 0;
+              padding: 0;
+          }
+
+          .menu {
+            background: #CDF0F6;
+            border: 1px solid #d4d4d4;
+            border-radius: 4px;
+            list-style-type: none;
+            margin: 4px;
+            padding: 2px;
+            }
+
+            @media screen and (min-width: 480px){
+                .div2 {width: 200px; float: left;}
+                .main {margin-left: 216px;}
+            }
+      </style>
+    </head>
+    <body>
+        <h1>Resize the browser window to see the effect!</h1>
+        <p>The media query will only apply if the media type is screen and the viewport is 480px wide or wider.</p>
+        <br>
+        
+        <div class="div1">
+            <div class="div2">
+                <ul class="ulist">
+                    <li class="menu">Menu1</li>
+                    <li class="menu">Menu2</li>
+                    <li class="menu">Menu3</li>
+                    <li class="menu">Menu4</li>
+                    <li class="menu">Menu5</li>
+                </ul>
+            </div>
+
+            <div class="main">
+                <h1>Resize the browser window to see the effect!</h1>
+                <p>This example shows a menu that will float to the left of the page if the viewport is 480 pixels wide or wider. If the viewport is less than 480 pixels, the menu will be on top of the content.</p>
+              </div>
+        </div>
+    </body>
+</html>
