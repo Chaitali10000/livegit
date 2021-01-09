@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: blue;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: skyblue;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+}
+
+.grid-container1 {
+  display: grid;
+  grid-template-columns: 80px 20px 30px auto;
+  grid-gap: 10px;
+  background-color: blue;
+  padding: 10px;
+}
+
+.grid-container1 > div {
+  background-color: skyblue;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-rows: 90px 200px;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: blue;
+  padding: 10px;
+}
+
+.grid-container2 > div {
+  background-color: skyblue;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px 0;
+}
+
+.grid-container3 {
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  justify-content: space-evenly;
+  grid-gap: 10px;
+  background-color: blue;
+  padding: 10px;
+}
+
+.grid-container3 > div {
+  background-color: skyblue;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px 0;
+}
+
+.grid-container4 {
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  justify-content: space-around;
+  grid-gap: 10px;
+  background-color: blue;
+  padding: 10px;
+}
+
+.grid-container4 > div {
+  background-color: skyblue;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px 0;
+}
+
+.grid-container5 {
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  justify-content: space-between;
+  grid-gap: 10px;
+  background-color: blue;
+  padding: 10px;
+}
+
+.grid-container5 > div {
+  background-color: skyblue;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px 0;
+}
+
+.grid-container6 {
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  justify-content: center;
+  grid-gap: 10px;
+  background-color: blue;
+  padding: 10px;
+}
+
+.grid-container6 > div {
+  background-color: skyblue;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px 0;
+}
+
+.grid-container7 {
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  justify-content: start;
+  grid-gap: 10px;
+  background-color: blue;
+  padding: 10px;
+}
+
+.grid-container7 > div {
+  background-color: skyblue;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px 0;
+}
+.grid-container8 {
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  justify-content: end;
+  grid-gap: 10px;
+  background-color: blue;
+  padding: 10px;
+}
+
+.grid-container8 > div {
+  background-color: skyblue;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px 0;
+}
+
+.grid-container9 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-content: center;
+  grid-gap: 10px;
+  background-color:teal;
+  padding: 10px;
+  height: 400px;
+}
+
+.grid-container9 > div {
+  background-color: skyblue;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px 0;
+}
+</style>
+</head>
+<body>
+
+<h1>Grid Container</h1>
+<div class="grid-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+</div><br><br>
+
+<div class="grid-container1">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+  </div><br><br>
+
+  <h1>Grid template row Container</h1>
+<div class="grid-container2">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+</div><br><br>
+
+<h1>Grid justify space evenly Container</h1>
+<div class="grid-container3">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+</div><br><br>
+
+<h1>Grid justify space around Container</h1>
+<div class="grid-container4">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+  </div><br><br>
+
+  <h1>Grid justify space between Container</h1>
+  <div class="grid-container5">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+  </div><br><br>
+
+  <h1>Grid justify center Container</h1>
+  <div class="grid-container6">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+  </div><br><br>
+
+  <h1>Grid justify start Container</h1>
+  <div class="grid-container7">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+  </div><br><br>
+
+  <h1>Grid justify end Container</h1>
+  <div class="grid-container8">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+  </div><br><br>
+
+  <h1>Grid align content Container</h1>
+  <div class="grid-container9">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+  </div><br><br>
+</body>
+</html>

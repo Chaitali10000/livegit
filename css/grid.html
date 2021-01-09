@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+          .container{
+              display: grid;
+              grid-template-columns: auto auto auto;
+              background-color: teal;
+              padding: 15px;
+          }
+        
+        .grid{
+            background-color: skyblue;
+            border: 1px solid blue;
+            padding: 15px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .container1{
+              display: inline-grid;
+              grid-template-columns: auto auto auto;
+              background-color: teal;
+              padding: 15px;
+          }
+        
+        .grid1{
+            background-color: skyblue;
+            border: 1px solid blue;
+            padding: 15px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .container2{
+              display: inline-grid;
+              grid-template-columns: auto auto auto;
+              background-color: teal;
+              padding: 10px;
+              grid-column-gap: 50px;
+          }
+        
+        .grid2{
+            background-color: skyblue;
+            border: 1px solid blue;
+            padding: 30px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .container3{
+              display: inline-grid;
+              grid-template-columns: auto auto auto;
+              background-color: teal;
+              padding: 10px;
+              grid-row-gap: 50px;
+
+          }
+        
+        .grid3{
+            background-color: skyblue;
+            border: 1px solid blue;
+            padding: 30px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .container4{
+              display: inline-grid;
+              grid-template-columns: auto auto auto;
+              background-color: teal;
+              padding: 10px;
+              grid-row-gap: 50px;
+
+          }
+        
+        .container4 > div{
+            background-color: skyblue;
+            border: 1px solid blue;
+            padding: 30px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .grid11{
+            grid-column-start: 1;
+            grid-column-end:4;
+        }
+
+        .container5{
+              display: inline-grid;
+              grid-template-columns: auto auto auto;
+              background-color: teal;
+              padding: 10px;
+             
+
+          }
+        
+        .container5 > div{
+            background-color: skyblue;
+            border: 1px solid blue;
+            padding: 30px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .grid12{
+            grid-row-start: 1;
+            grid-row-end:4;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Grid Elements</h1>
+        <div class="container">
+            <div class="grid">1</div>
+            <div class="grid">2</div>
+            <div class="grid">3</div>
+            <div class="grid">4</div>
+            <div class="grid">5</div>
+            <div class="grid">6</div>
+            <div class="grid">7</div>
+            <div class="grid">8</div>
+            <div class="grid">9</div>
+        </div><br><br>
+
+        <h1>Display Grid property</h1>
+        <div class="container1">
+            <div class="grid1">1</div>
+            <div class="grid1">2</div>
+            <div class="grid1">3</div>
+            <div class="grid1">4</div>
+            <div class="grid1">5</div>
+            <div class="grid1">6</div>
+            <div class="grid1">7</div>
+            <div class="grid1">8</div>
+            <div class="grid1">9</div>
+        </div><br><br>
+         
+        <h1>Grid column gap property</h1>
+        <div class="container2">
+            <div class="grid2">1</div>
+            <div class="grid2">2</div>
+            <div class="grid2">3</div>
+            <div class="grid2">4</div>
+            <div class="grid2">5</div>
+            <div class="grid2">6</div>
+            <div class="grid2">7</div>
+            <div class="grid2">8</div>
+            <div class="grid2">9</div>
+        </div><br><br>
+        
+        <h1>Grid row gap property</h1>
+        <div class="container3">
+            <div class="grid3">1</div>
+            <div class="grid3">2</div>
+            <div class="grid3">3</div>
+            <div class="grid3">4</div>
+            <div class="grid3">5</div>
+            <div class="grid3">6</div>
+            <div class="grid3">7</div>
+            <div class="grid3">8</div>
+            <div class="grid3">9</div>
+        </div><br><br>
+
+        <h1>Grid gap line property</h1>
+        <div class="container4">
+            <div class="grid11">1</div>
+            <div class="grid2">2</div>
+            <div class="grid3">3</div>
+            <div class="grid4">4</div>
+            <div class="grid5">5</div>
+            <div class="grid6">6</div>
+            <div class="grid7">7</div>
+            <div class="grid8">8</div>
+            <div class="grid9">9</div>
+        </div><br><br>
+
+        <h1>Grid gap line row property</h1>
+        <div class="container5">
+            <div class="grid12">1</div>
+            <div class="grid2">2</div>
+            <div class="grid3">3</div>
+            <div class="grid4">4</div>
+            <div class="grid5">5</div>
+            <div class="grid6">6</div>
+            <div class="grid7">7</div>
+            <div class="grid8">8</div>
+            <div class="grid9">9</div>
+        </div><br><br>
+    </body>
+</html>

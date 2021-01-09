@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: turquoise;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.item2 {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.item5 {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}
+
+.grid-container1 {
+  display: grid;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  grid-template-columns: auto auto auto auto;
+}
+
+.grid-container1 > div {
+  background-color: skyblue;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.itm1 {
+  grid-column: 1 / 5;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  grid-template-columns: auto auto auto auto auto auto;
+}
+
+.grid-container2 > div {
+  background-color: skyblue;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.itmgrid1{
+    grid-column: 1 / 5;
+}
+
+.grid-container3 {
+  display: grid;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  grid-template-columns: auto auto auto auto auto auto;
+}
+
+.grid-container3 > div {
+  background-color: skyblue;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.grid1{
+    grid-column: 1 / span 5;
+}
+
+.grid-container4 {
+  display: grid;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  grid-template-columns: auto auto auto auto auto auto;
+}
+
+.grid-container4 > div {
+  background-color: skyblue;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.grid-row1{
+    grid-row: 1 / 5;
+}
+
+.grid-container5 {
+  display: grid;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  grid-template-columns: auto auto auto auto auto auto;
+}
+
+.grid-container5 > div {
+  background-color: skyblue;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.gridrow8 {
+  grid-area: 1 / 2 / 4 / 6;
+}
+
+.itemarea1{
+    grid-area: area;
+}
+
+.grid-container6 {
+  display: grid;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  grid-template-areas: 'area area area area';
+}
+
+.grid-container6 > div {
+  background-color: skyblue;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+
+</style>
+</head>
+<body>
+
+<h1>A Five Items Grid Layout:</h1>
+
+<div class="grid-container">
+  <div class="grid-item item1">1</div>
+  <div class="grid-item item2">2</div>
+  <div class="grid-item item3">3</div>  
+  <div class="grid-item item4">4</div>
+  <div class="grid-item item5">5</div>
+</div><br><br><br>
+
+<div class="grid-container1">
+    <div class="itm1">1</div>
+    <div class="itm2">2</div>
+    <div class="itm3">3</div>  
+    <div class="itm4">4</div>
+    <div class="itm5">5</div>
+    <div class="itm6">6</div>
+    <div class="itm7">7</div>
+    <div class="itm8">8</div>  
+    <div class="itm9">9</div>
+    <div class="itm10">10</div>
+  </div><br><br><br>
+
+
+  <div class="grid-container2">
+    <div class="itmgrid1">1</div>
+    <div class="itmgrid2">2</div>
+    <div class="itmgrid3">3</div>  
+    <div class="itmgrid4">4</div>
+    <div class="itmgrid5">5</div>
+    <div class="itmgrid6">6</div>
+    <div class="itmgrid7">7</div>
+    <div class="itmgrid8">8</div>  
+    <div class="itmgrid9">9</div>
+    <div class="itmgrid10">10</div>
+  </div><br><br><br>
+
+  <div class="grid-container3">
+    <div class="grid1">1</div>
+    <div class="grid2">2</div>
+    <div class="grid3">3</div>  
+    <div class="grid4">4</div>
+    <div class="grid5">5</div>
+    <div class="grid6">6</div>
+    <div class="grid7">7</div>
+    <div class="grid8">8</div>  
+    <div class="grid9">9</div>
+    <div class="grid10">10</div>
+  </div><br><br><br>
+
+  <h2>Grid row property</h2>
+  <div class="grid-container4">
+    <div class="grid-row1">1</div>
+    <div class="grid-row2">2</div>
+    <div class="grid-row3">3</div>  
+    <div class="grid-row4">4</div>
+    <div class="grid-row5">5</div>
+    <div class="grid-row6">6</div>
+    <div class="grid-row7">7</div>
+    <div class="grid-row8">8</div>  
+    <div class="grid-row9">9</div>
+    <div class="grid-row10">10</div>
+  </div><br><br><br>
+
+  <h2>Grid area property</h2>
+  <div class="grid-container5">
+    <div class="gridrow1">1</div>
+    <div class="gridrow2">2</div>
+    <div class="gridrow3">3</div>  
+    <div class="gridrow4">4</div>
+    <div class="gridrow5">5</div>
+    <div class="gridrow6">6</div>
+    <div class="gridrow7">7</div>
+    <div class="gridrow8">8</div>  
+    <div class="gridrow9">9</div>
+    <div class="gridrow10">10</div>
+  </div><br><br><br>
+
+  <h2>Grid-area property</h2>
+  <div class="grid-container6">
+    <div class="itemarea1">1</div>
+    <div class="itemarea2">2</div>
+    <div class="itemarea3">3</div>  
+    <div class="itemarea4">4</div>
+    <div class="itemarea5">5</div>
+    <div class="itemarea6">6</div>
+  </div>
+</body>
+</html>
