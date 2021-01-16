@@ -94,6 +94,7 @@ li a {
         height: 76%;
     }
 
+    /* For price */
     .price {
         text-align: center;
         font-size: 55px;
@@ -103,6 +104,7 @@ li a {
 
     }
 
+    /* For para */
     .para{
         text-align: center;
         padding: 0;
