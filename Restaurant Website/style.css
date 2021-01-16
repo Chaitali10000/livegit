@@ -1,3 +1,4 @@
+  /* For Body style starts */
 body{
     background-image: url(images/topography.svg),linear-gradient(to right, #EC3E71, #8645C5);
     background-repeat: no-repeat;
@@ -6,7 +7,9 @@ body{
     margin: 50px;
     background-attachment: fixed;
 }
+/* For Body style end */
 
+/* For Navigation style starts */
 .menu {
     list-style-type: none;
     margin: 0;
@@ -30,7 +33,9 @@ li a {
     width: 99%;
     padding: 11px 0px;
 }
+/* For Navigation style end */
 
+/* For Second section styling starts */
 .head {
     display: grid;
     grid-gap: 2px;
@@ -39,11 +44,14 @@ li a {
     grid-template-rows: 0px 124px;
 }
 
+/* For Image styling starts */
 .taco{
     width: 65%;
     height: 395px;
 }
+/* For Image styling end */
 
+/* For Div  styling starts */
 .div{
     display: inline;
     position: absolute;
@@ -69,7 +77,9 @@ li a {
         color: #272727;
         font-family: 'Roboto', sans-serif;
     }
+    /* For Div  styling end */
 
+    /* For two Div styling starts */
     .div1{
         margin-left: 67%;
         background-color: #ffc600;
@@ -102,7 +112,11 @@ li a {
         color: #272727;
         text-shadow: 1px 1px grey;
     }
+    /* For two Div styling end */
 
+ /* Second section styling end */
+
+  /* Row section styling starts */
     .row {
         display: flex;
         grid-gap: 22px;
@@ -125,7 +139,9 @@ li a {
         font-weight: bold;
         color: #6f5757e8;
     }
+    /* Row section styling end */
 
+    /* About section styling starts */
     .about{
         display: flex;
         grid-gap: 15px;
@@ -134,10 +150,13 @@ li a {
         padding: 35px;
     }
 
+    /* For image start */
     .img-about{
         width: 37%;
     }
+     /* For image end */
 
+    /* For Paragrapg start */
     .paragraph{
         margin-top: 8%;
     }
@@ -156,7 +175,9 @@ li a {
         text-shadow: 1px 1px darkgrey;
         color: #272727;
     }
+    /* For Paragrapg end */ 
 
+    /* For button style start */
     .paragraph button{
         background-color: #ffc600;
         padding: 11px;
@@ -165,11 +186,15 @@ li a {
         border: none;
         font-weight: bold;
     }
+     /* For button style end */
 
-    .gallery-img {
-        max-width: 100%;
-        width: 100%;
-        padding: 0;
+/* About section styling end */
+
+
+   /* Gallery image styling starts */
+    
+    .image-gallery{
+        margin-top: 1%;
     }
 
     .image-gallery h3 {
@@ -180,11 +205,7 @@ li a {
         margin: 0;
     }
 
-    .image-gallery{
-        margin-top: 1%;
-    }
-
-    .gallery {
+   .gallery {
         width: 100%;
         display: grid;
         grid-template-columns: auto auto auto auto auto;
@@ -192,6 +213,14 @@ li a {
         margin-top: 2%;
     }
 
+    /* For images */
+    .gallery-img {
+        max-width: 100%;
+        width: 100%;
+        padding: 0;
+    }
+
+    /* Two horizontal line styling starts */
     .image-gallery h3:before {
         display: block;
         content: '';
@@ -216,33 +245,42 @@ li a {
         margin-top: 1%;
         padding-top: 0%;
     }
+    /* Two horizontal line styling end */
+
+    /* Gallery image styling end */
 
 
     /* -----------For Responsive Website we used max width and min width---------- */
 
+    /* Media query for max-width 1024px starts*/
     @media only screen and (max-width:1024px){
         
+        /* For main */
         .main {
             display: grid;
             grid-gap: 15px;
         }
-
-        .subhead{
-            margin-top: 2%;
-        }
-
+     
+        /* For head */
         .head {
             display: grid;
             grid-gap: 17px;
             justify-content: start;
             grid-template-rows: 0px 124px;
         }
+
+        /* For subhead */
+        .subhead{
+            margin-top: 2%;
+        }
         
+        /* For taco image */
         .taco {
             width: 65%;
             height: 359px;
         }
 
+        /* For row section */
         .row {
             grid-gap: 33px;
             display: grid;
@@ -267,20 +305,23 @@ li a {
 
         }
 
+        /* For about section */
         .about{
             margin-top: 4%;
         }
     
+        /* About image */
         .img-about{
             width: 43%;
         }
     
+        /* For about paragraph */
         .paragraph {
             margin-top: 5%;
             align-content: center;
         }
        
-
+         /* For gallery section */
         .image-gallery h3 {
             text-align: center;
             font-size: 27px;
@@ -296,25 +337,22 @@ li a {
             margin-top: 1%;
         }
      }
+     /* Media query for max-width 1024px end*/
 
+     /* Media query for max-width 800px starts*/
      @media only screen and (max-width:800px){
+         /* For body */
         body{
             margin: 40px;
-    
-        }
+         }
         
+         /* For main */
         .main{
             display: grid;
             grid-gap: 15px;
         }
 
-        /* .head {
-            display: grid;
-            grid-gap: 3px;
-            justify-content: start;
-            grid-template-rows: 400px 156px 190px;
-        } */
-
+        /* For head */
         .head {
             display: grid;
             grid-gap: 3px;
@@ -325,11 +363,14 @@ li a {
         .subhead {
             margin-top: 2%;
         }
+
+        /* For head taco image */
         .taco {
             width: 99%;
             height: 368px;
         }
 
+        /* For head div section */
         .div {
             display: inline;
             position: absolute;
@@ -337,6 +378,7 @@ li a {
             margin-top: 7%;
         }
 
+         /* Two vertically div section */
         .div1 {
             background-color: #ffc600;
             height: 92%;
@@ -358,13 +400,7 @@ li a {
             
         }
 
-        /* .row {
-            grid-gap: 19px;
-            display: grid;
-            grid-template-columns: auto auto;
-            margin-top: -34%;
-        } */
-
+        /* For row section */
         .row {
             grid-gap: 23px;
             display: grid;
@@ -384,6 +420,7 @@ li a {
             font-size: 16px;
         }
 
+        /* For about section */
         .about {
             margin-top: 2%;
             display: block;
@@ -397,6 +434,7 @@ li a {
             margin-top: -5%;
         }
 
+        /* For image gallery section */
         .image-gallery {
             margin-top: 1%;
         }
@@ -404,7 +442,6 @@ li a {
         .image-gallery h3 {
             text-align: center;
             font-size: 25px;
-            /* margin: -7px; */
             margin-right: 0%;
         }
 
@@ -438,47 +475,55 @@ li a {
             grid-template-columns: auto auto;
         }
         
-            }
+     }
+            /* Media query for max-width 800px end */
 
-            @media only screen and (max-width:600px){
-                .div {
-                    padding: 0%;
-                    margin-left: 10%;
-                }
+         
+   /* Media query for max-width 600px starts */
+     @media only screen and (max-width:600px){
+         /* For head section */
+        .head {
+            display: grid;
+            grid-gap: 3px;
+            justify-content: start;
+            grid-template-rows: 400px 174px 155px;
+             }
 
-                .div1 {
-                    background-color: #ffc600;
-                    height: 86%;
-                    width: 48%;
-                    margin-left: 0%;
-                }
+     /* For head div section */
+        .div {
+             padding: 0%;
+             margin-left: 10%;
+             }
 
-                .div2 {
-                    background-color: #ffc600;
-                    margin-left: 51%;
-                    width: 48%;
-                    height: 96%;
-                    margin-top: -34%;
-                }
+             /* For two vertically div */
+        .div1 {
+             background-color: #ffc600;
+             height: 86%;
+             width: 48%;
+             margin-left: 0%;
+              }
 
-                .head {
-                    display: grid;
-                    grid-gap: 3px;
-                    justify-content: start;
-                    grid-template-rows: 400px 174px 155px;
-                }
+        .div2 {
+              background-color: #ffc600;
+              margin-left: 51%;
+              width: 48%;
+              height: 96%;
+              margin-top: -34%;
+              }
 
-                .row {
-                    grid-gap: 23px;
-                    display: grid;
-                    grid-template-columns: auto auto;
-                    margin-top: -33%;
-                } 
+         /* For row section */
+        .row {
+              grid-gap: 23px;
+              display: grid;
+              grid-template-columns: auto auto;
+              margin-top: -33%;
+              } 
 
                 .row1 p {
                     font-size: 17px;
                 }
 
+                /* For about section */
                 .about {
                     display: block;
                 }
@@ -491,6 +536,7 @@ li a {
                     margin-top: -9%;
                 }
 
+                /* For gallery section */
                 .image-gallery h3:before {
                     display: block;
                     content: '';
@@ -504,9 +550,12 @@ li a {
                     position: absolute;
                 }
             }
+               /* Media query for max-width 600px end */
 
+
+        /* Media query for max-width 400px starts */
     @media only screen and (max-width:400px){
-        
+        /* For navigation menu */
         .menu {
             display: grid;
             grid-template-columns: auto;
@@ -514,17 +563,21 @@ li a {
             font-family: 'Roboto', sans-serif;
         }
         
+        /* For head section */
         .head {
             display: grid;
             grid-gap: 221px;
             justify-content: start;
             grid-template-rows: 203px 103px;
         }
+
+        /* For head taco image */
         .taco{
             width: 100%;
             height: 400px;
         }
         
+        /* For head div */
         .div {
             display: inline;
             position: absolute;
@@ -549,6 +602,8 @@ li a {
             color: #272727;
             font-family: 'Roboto', sans-serif;
         }
+
+        /* For two vertically div */
         .div1 {
             margin-left: 0%;
             background-color: #ffc600;
@@ -564,6 +619,7 @@ li a {
             margin-top: -49%;
         }
         
+        /* For row section */
         .row {
             grid-gap: 17px;
             margin-top: 4%;
@@ -593,6 +649,7 @@ li a {
                 margin: 6%;
             }
         
+            /* For about section */
             .about {
                 grid-gap: 4px;
                 background-color: white;
@@ -617,7 +674,7 @@ li a {
                 font-size: 12px;
             }
             
-        
+            /* For image gallery section */
             .image-gallery{
                 margin-top: 1%;
             }
@@ -636,3 +693,4 @@ li a {
             }
         
      }
+      /* Media query for max-width 400px starts end*/
