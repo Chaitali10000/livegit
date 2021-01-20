@@ -28,6 +28,15 @@ let logValue = [];
 
 // addBtn.addEventListener('click', myadd);
 
+// currentResult = (currentResult + 10) * 2 - 3 / 1;
+
+// let calculationDescription = `(${FirstResult} + 10) * 2 / 1 `;
+
+// let errorMessgae = 'An error \'' +
+//                     'occured';
+
+// outputResult(currentResult, calculationDescription) ;
+
 function getUserNumberInput(){
     return parseInt(userInput.value);
 }
@@ -38,53 +47,59 @@ function createAndWriteOutput(opertor, resultBeforeCalc, calcNumber){
 
 }
 
+function writeToLog(
+    operatorIdentifier, 
+     prevResult,
+     number,
+     newResult
+    ){
+        const logEntry = {
+            operator: operatorIdentifier,
+            prevResult: prevResult,
+            number: number,
+            result: newResult
+        };
+        logValue.push(logEntry);
+        console.log(logValue);
+        
+    }
+    
+
 function add(){
     const enteredNumber = getUserNumberInput();
     const initialResult = currentResult;
-    currentResult += currentResult + enteredNumber;
+    console.log('INPUT', enteredNumber, currentResult);
+     currentResult += enteredNumber;                         
     createAndWriteOutput('+', initialResult, enteredNumber);
-    const logEntry = {
-        operator: 'ADD',
-        prevResult: initialResult,
-        number: enteredNumber,
-        result: currentResult
-    };
-    logValue.push(logEntry.operator);
-    console.log(logValue[1]);
+    writeToLog('ADD', enteredNumber, initialResult, currentResult);
 }
+    
 
 function subtract(){
     const enteredNumber = getUserNumberInput();
     const initialResult = currentResult;
-    currentResult = currentResult - enteredNumber;
+    currentResult -= enteredNumber;
     createAndWriteOutput('-', initialResult, enteredNumber);
+    writeToLog('SUBTRACT', enteredNumber, initialResult, currentResult);
 }
 
 function multiply(){
     const enteredNumber = getUserNumberInput();
     const initialResult = currentResult;
-    currentResult = currentResult * enteredNumber;
+    currentResult *=  enteredNumber;
     createAndWriteOutput('*', initialResult, enteredNumber);
+    writeToLog('MULTIPLY', enteredNumber, initialResult, currentResult);
 }
 
 function divide(){
     const enteredNumber = getUserNumberInput();
     const initialResult = currentResult;
-    currentResult = currentResult / enteredNumber;
+    currentResult /= enteredNumber;
     createAndWriteOutput('/', initialResult, enteredNumber);
+    writeToLog('DIVIDE', enteredNumber, initialResult, currentResult);
 }
 
 addBtn.addEventListener('click', add);
 subtractBtn.addEventListener('click', subtract);
 multiplyBtn.addEventListener('click', multiply);
 divideBtn.addEventListener('click', divide);
-
-
-// currentResult = (currentResult + 10) * 2 - 3 / 1;
-
-// let calculationDescription = `(${FirstResult} + 10) * 2 / 1 `;
-
-// let errorMessgae = 'An error \'' +
-//                     'occured';
-
-// outputResult(currentResult, calculationDescription);
